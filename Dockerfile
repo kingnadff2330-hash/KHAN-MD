@@ -1,7 +1,7 @@
 FROM node:lts-buster
 USER root
 RUN apt-get update && \
-    apt-get install -y ffmpeg webp git && \
+    apt-get install -y ffmpeg git && \
     apt-get upgrade -y && \
     rm -rf /var/lib/apt/lists/*
 USER node
